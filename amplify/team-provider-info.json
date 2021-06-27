@@ -14,6 +14,18 @@
     "categories": {
       "auth": {
         "photobookyt3a261292": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d28zz7ori1scjd",
+          "type": "manual"
+        }
+      },
+      "function": {
+        "AmplifyPhotosProcessor": {
+          "deploymentBucketName": "amplify-photobookyt-dev-192115-deployment",
+          "s3Key": "amplify-builds/AmplifyPhotosProcessor-6a6b2f7033704e637178-build.zip"
+        }
       }
     }
   }
