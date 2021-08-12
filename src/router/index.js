@@ -5,6 +5,7 @@ import SignUpPage from '../views/SignUpPage.vue';
 import AlbumsDetailPage from '../views/AlbumsDetailPage.vue';
 import AlbumsPage from '../views/AlbumsPage.vue';
 import { Auth } from 'aws-amplify';
+import HelloWorld from '../components/HelloWorld'
 
 Vue.use(VueRouter)
 
@@ -18,7 +19,12 @@ const routes = [
     path: "/signup",
     name: "SignUpPage",
     component: SignUpPage
-
+  },
+  {
+    path: "/helloworld",
+    name: "HelloWorld",
+    component: HelloWorld,
+    meta: { requiresAuth: true }
   },
   {
     path: "/album/:id",
@@ -31,7 +37,6 @@ const routes = [
     name: "AlbumsPage",
     component: AlbumsPage,
     meta: { requiresAuth: true }
-
   },
   {
     path: '/about',
