@@ -1,0 +1,6 @@
+{
+  "appId": "com.kylesdev.photobookyt",
+  "appName": "photobook-yt",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
