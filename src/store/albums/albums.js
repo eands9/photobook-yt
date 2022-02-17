@@ -57,7 +57,7 @@ export const albumInfo = {
                     bucket
                 }
             }
-
+            // 2:00 on video
             //s3 bucket storage add file to it
             try {
                 await Storage.put(key, file, {
